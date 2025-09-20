@@ -10,11 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Memorama',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: const Memorama(), // llamamos directamente al widget Memorama
-    );
+  return MaterialApp(
+  debugShowCheckedModeBanner: false,
+  theme: ThemeData(fontFamily: null), // usa fuente predeterminada
+  home: const MemoramaPage(),
+);
   }
 }
